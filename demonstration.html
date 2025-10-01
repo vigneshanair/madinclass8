@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night of the Hollow — Halloween Storybook</title>
+    <meta name="description" content="A CSS-only Halloween storybook with spooky animations and interactive elements">
+    <link rel="stylesheet" href="spooktacular.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Sticky Header -->
+    <header class="main-header" role="banner">
+        <div class="header-content">
+            <h1 class="logo">
+                <img src="assets/images/pumpkin.png" alt="Spooky Pumpkin" class="logo-img">
+                Night of the Hollow
+            </h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#cover" class="nav-link">Home</a>
+                <a href="#graveyard" class="nav-link">Graveyard</a>
+                <a href="#mansion" class="nav-link">Mansion</a>
+                <a href="#forest" class="nav-link">Forest</a>
+                <a href="#escape" class="nav-link">Escape</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Atmospheric Background Elements -->
+    <div class="atmosphere" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+        <div class="stars"></div>
+        
+        <!-- Flying Bats -->
+        <div class="bat bat-1">🦇</div>
+        <div class="bat bat-2">🦇</div>
+        <div class="bat bat-3">🦇</div>
+        
+        <!-- Floating Ghosts -->
+        <div class="ghost ghost-1"></div>
+        <div class="ghost ghost-2"></div>
+        
+        <!-- Cobwebs in corners -->
+        <div class="cobweb cobweb-tl"></div>
+        <div class="cobweb cobweb-tr"></div>
+        <div class="cobweb cobweb-bl"></div>
+        <div class="cobweb cobweb-br"></div>
+    </div>
+
+    <main id="main-content" class="storybook" role="main" aria-live="polite">
+        <!-- COVER PAGE -->
+        <section id="cover" class="page cover-page" aria-labelledby="cover-title">
+            <div class="page-content">
+                <header class="page-header">
+                    <h1 id="cover-title" class="title-main">Night of the Hollow</h1>
+                    <p class="subtitle">A CSS-Only Halloween Adventure</p>
+                </header>
+                
+                <div class="page-body">
+                    <div class="hero-pumpkin">
+                        <img src="assets/images/pumpkin.png" alt="Glowing Pumpkin" class="pumpkin-img">
+                    </div>
+                    
+                    <p class="intro-text">When the moon is full and the wind howls through dead trees, the spirits of Hollow Mansion awaken. Dare you explore its secrets?</p>
+                    
+                    <div class="character-showcase">
+                        <div class="character vampire" tabindex="0">
+                            <img src="assets/images/skull.png" alt="Vampire" class="char-img">
+                            <span class="char-name">Vampire</span>
+                        </div>
+                        <div class="character werewolf" tabindex="0">
+                            <img src="assets/images/wolf.png" alt="Werewolf" class="char-img">
+                            <span class="char-name">Werewolf</span>
+                        </div>
+                        <div class="character ghost-char" tabindex="0">
+                            <img src="assets/images/ghost.png" alt="Ghost" class="char-img">
+                            <span class="char-name">Ghost</span>
+                        </div>
+                    </div>
+                    
+                    <nav class="page-nav" aria-label="Cover navigation">
+                        <a href="#graveyard" class="nav-btn pumpkin-btn">Begin Journey →</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRAVEYARD PAGE -->
+        <section id="graveyard" class="page graveyard-page" aria-labelledby="graveyard-title">
+            <div class="page-content">
+                <header class="page-header">
+                    <h2 id="graveyard-title" class="title-section">The Ancient Graveyard</h2>
+                </header>
+                
+                <div class="page-body">
+                    <article class="story-content">
+                        <p class="story-text">Moonlight filters through skeletal trees, casting long shadows across crumbling tombstones. The air grows cold as mist rises from the ground. Something stirs beneath the earth...</p>
+                    </article>
+
+                    <div class="interactive-scene">
+                        <div class="graveyard-scene">
+                            <div class="tombstone tomb-1">
+                                <img src="assets/images/tombstone.png" alt="Old Tombstone">
+                            </div>
+                            <div class="tombstone tomb-2">
+                                <img src="assets/images/tombstone.png" alt="Old Tombstone">
+                            </div>
+                            <div class="rising-ghost">
+                                <img src="assets/images/ghost.png" alt="Rising Ghost">
+                            </div>
+                            <div class="fog-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="spooky-fact">
+                        <p>💀 In Victorian times, families would have picnics in graveyards to remember loved ones.</p>
+                    </div>
+                    
+                    <nav class="page-nav">
+                        <a href="#cover" class="nav-btn bone-btn">← Home</a>
+                        <a href="#mansion" class="nav-btn pumpkin-btn">Next →</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- HAUNTED MANSION PAGE -->
+        <section id="mansion" class="page mansion-page" aria-labelledby="mansion-title">
+            <div class="page-content">
+                <header class="page-header">
+                    <h2 id="mansion-title" class="title-section">Hollow Mansion</h2>
+                </header>
+                
+                <div class="page-body">
+                    <article class="story-content">
+                        <p class="story-text">The mansion door creaks open on its own. Inside, dust dances in moonlight beams. Portraits watch your every move. A cold breath whispers your name from the shadows.</p>
+                    </article>
+
+                    <div class="mansion-layout">
+                        <div class="room hallway">
+                            <div class="floating-candles">
+                                <div class="candle"></div>
+                                <div class="candle"></div>
+                                <div class="candle"></div>
+                            </div>
+                            <div class="watching-eyes">
+                                <div class="eye left-eye"></div>
+                                <div class="eye right-eye"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="character-interaction">
+                        <div class="vampire-character" tabindex="0">
+                            <img src="assets/images/skull.png" alt="Vampire" class="char-large">
+                            <p class="hint">Hover to see fangs!</p>
+                        </div>
+                    </div>
+                    
+                    <nav class="page-nav">
+                        <a href="#graveyard" class="nav-btn bone-btn">← Back</a>
+                        <a href="#forest" class="nav-btn pumpkin-btn">Next →</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- DARK FOREST PAGE -->
+        <section id="forest" class="page forest-page" aria-labelledby="forest-title">
+            <div class="page-content">
+                <header class="page-header">
+                    <h2 id="forest-title" class="title-section">The Whispering Woods</h2>
+                </header>
+                
+                <div class="page-body">
+                    <article class="story-content">
+                        <p class="story-text">Bare branches claw at the sky like skeletal fingers. Strange howls echo in the distance. The path behind you has vanished, and something large moves between the trees.</p>
+                    </article>
+
+                    <div class="forest-scene">
+                        <div class="tree tree-1"></div>
+                        <div class="tree tree-2"></div>
+                        <div class="tree tree-3"></div>
+                        <div class="werewolf-character" tabindex="0">
+                            <img src="assets/images/wolf.png" alt="Werewolf" class="wolf-img">
+                            <p class="hint">Hover for transformation!</p>
+                        </div>
+                        <div class="glowing-eyes">
+                            <div class="eye-pair"></div>
+                            <div class="eye-pair"></div>
+                        </div>
+                    </div>
+
+                    <div class="spooky-fact">
+                        <p>🌕 Werewolf legends date back to ancient Greece and are found in cultures worldwide.</p>
+                    </div>
+                    
+                    <nav class="page-nav">
+                        <a href="#mansion" class="nav-btn bone-btn">← Back</a>
+                        <a href="#escape" class="nav-btn pumpkin-btn">Escape →</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL ESCAPE PAGE -->
+        <section id="escape" class="page escape-page" aria-labelledby="escape-title">
+            <div class="page-content">
+                <header class="page-header">
+                    <h2 id="escape-title" class="title-section">The Final Escape</h2>
+                </header>
+                
+                <div class="page-body">
+                    <article class="story-content">
+                        <p class="story-text">You burst through the forest edge, the mansion's glow fading behind you. But as you glance back, you see them all—watching from the tree line, waiting for next Halloween.</p>
+                        
+                        <div class="final-message">
+                            <p>You survived the Night of the Hollow... until next time.</p>
+                        </div>
+                    </article>
+
+                    <div class="final-scene">
+                        <div class="fleeing-character">
+                            <img src="assets/images/pumpkin.png" alt="Running Pumpkin" class="flee-img">
+                        </div>
+                        <div class="watching-crowd">
+                            <div class="spirit"></div>
+                            <div class="spirit"></div>
+                            <div class="spirit"></div>
+                        </div>
+                    </div>
+
+                    <div class="halloween-celebration">
+                        <img src="assets/images/halloween-banner.png" alt="Happy Halloween" class="banner-img">
+                    </div>
+                    
+                    <nav class="page-nav">
+                        <a href="#forest" class="nav-btn bone-btn">← Back</a>
+                        <a href="#cover" class="nav-btn pumpkin-btn">Start Over</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <p class="credits">A CSS-Only Halloween Experience... Just Spooky Magic 🎃</p>
+            <p class="accessibility-note">Accessibility friendly with reduced motion support</p>
+        </div>
+    </footer>
+</body>
+</html>

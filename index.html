@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Coding Challenge #1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-1px);
+            transition: all 0.2s ease;
+        }
+
+        .highlight {
+            background-color: #e8f4fc;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .demo-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .demo-link:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 600px) {
+            table {
+                width: 95%;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Coding Challenge #1</h1>
+        <p class="subtitle">Team Members and Panther IDs</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Team Member Names</th>
+                    <th>Panther ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight">
+                    <td>Rajeev Vas Veeragandham</td>
+                    <td>002932716</td>
+                </tr>
+                <tr>
+                    <td>Vignesh Nair</td>
+                    <td>002893762</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <a href="demonstration.html" class="demo-link">View My Demonstration</a>
+        </footer>
+    </div>
+</body>
+</html>
